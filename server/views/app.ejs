@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html ng-app="miapp">
+	<head>
+		 <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		 <link href="/bower_components/animate-css/animate.css" rel="stylesheet">
+		<title>inicio app</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">Aprendiendo Nodejs,Mongodb</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#">Inicio</a></li>
+		       <li class="active"><a ui-sref="iniciar_sesion" href="#!iniciar_sesion">Iniciar sesion</a></li>
+		      <li class="active"><a ui-sref="listado" href="#!listado">Listado</a></li>
+		      <li class="active"><a ui-sref="crear_cliente" href="#!crear_cliente">crear cliente</a></li>
+		      
+		    </ul>
+		  </div>
+		</nav>
+		<div class="animated swing" ui-view>
+			
+		</div>
+	</body>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="/javascripts/app.js"></script>
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/javascripts/controllers/clienteController.js"></script>
+	<script src="/javascripts/controllers/loginController.js"></script>
+	
+	</html>	

@@ -1,0 +1,21 @@
+<form role="form" ng-controller="clienteController">
+  <div class="form-group col-xs-8">
+        
+    <label for="email">Primer Nombre</label>
+    <input type="text" ng-model="name"  class="form-control" id="pnombre">
+  </div>
+   <form role="form">
+  <div class="form-group col-xs-8">
+    <label for="email">Segundo nombre:</label>
+    <input type="text" ng-model="lastName"  class="form-control" id="snombre">
+  </div>
+  <div class="form-group col-xs-8">
+    <label for="email">Telefono:</label>
+    <input type="text" ng-model="tel" class="form-control" id="tel">
+  </div>
+    
+  <div class="form-group col-xs-8">
+   <button ng-click="crearCliente()" type="submit" class="btn btn-primary">Crear Cliente</button>
+  </div>
+  
+</form>
